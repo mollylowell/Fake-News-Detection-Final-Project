@@ -1,62 +1,60 @@
-# Fake-News-Detection-Final-Project
-Detecting fake vs real news using NLP, feature engineering, and classification models
-Fake vs. Real News Detection (NLP Project)
+# Fake News Detection (NLP Final Project)
 
-Overview
-This project explores whether fake and real news articles can be distinguished based on writing style rather than factual accuracy. Using natural language processing and feature engineering, I analyzed structural and linguistic patterns in news articles and trained classification models to detect misinformation.
+Detecting fake vs. real news articles using natural language processing, feature engineering, and classification models.
 
-Dataset
+---
 
-Fake and Real News Dataset (Kaggle)
+## Overview
 
-~45,000 labeled articles (fake vs real)
+This project explores whether fake and real news articles can be distinguished based on **writing style rather than factual accuracy**. Using NLP techniques and feature engineering, I analyzed structural and linguistic patterns in news articles and trained multiple classification models to detect misinformation.
 
-Sources include Reuters and known fake news websites
+---
 
-Time period: 2015–2018
+## Dataset
 
-What I Did
+- **Fake and Real News Dataset** (Kaggle)
+- Approximately **45,000 labeled articles** (fake vs. real)
+- Sources include **Reuters** and known fake news websites
+- Time period: **2015–2018**
 
-Cleaned and preprocessed raw news text
+> The dataset is publicly available on Kaggle and is not included in this repository due to size.
 
-Engineered features related to:
 
-Title and article length
+---
 
-Punctuation and formatting patterns
+## Models Used
 
-Numeric and statistical content
+- Logistic Regression  
+- Random Forest  
+- Linear Support Vector Machine (SVM)
 
-Linguistic and emotional tone
+---
 
-Explored topic distributions using LDA topic modeling
+## Key Findings
 
-Trained and compared multiple classification models
+- Fake news titles tend to be **longer and more sensational**
+- Real news articles contain **more numeric and financial detail**
+- Writing style alone is highly predictive of fake news
+- **Random Forest** achieved the strongest performance (F1 ≈ 0.92)
 
-Models Used
+---
 
-Logistic Regression
+## Files
 
-Random Forest
+- `Final_Project_Code.ipynb`  
+  Full data cleaning, feature engineering, modeling, and evaluation workflow
 
-Linear Support Vector Machine (SVM)
+---
 
-Key Findings
+## Tools & Technologies
 
-Fake news titles tend to be longer and more sensational
-
-Real news articles contain more detailed numeric information
-
-Writing style alone is highly predictive of fake news
-
-Random Forest achieved the strongest performance (F1 ≈ 0.92)
-
-Files
-
-fake_news_detection.ipynb – full data cleaning, analysis, modeling, and evaluation
-
-Tools
 Python, pandas, scikit-learn, NLTK, Google Colab
 
-Data Access
-The dataset is publicly available on Kaggle and is not included in this repository due to size.
+---
+
+## How to Run
+
+1. Open the notebook in Google Colab
+2. Download the dataset from Kaggle
+3. Run cells in order
+
